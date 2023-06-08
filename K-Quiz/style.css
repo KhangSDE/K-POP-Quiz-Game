@@ -1,0 +1,272 @@
+body {
+    background-color: rgb(29, 28, 61);
+    margin: 0;
+    background-attachment: fixed;
+    font-family: 'Geologica', sans-serif;
+    user-select: none;
+    
+}
+
+header {
+
+    /*background-color: rgb(92, 236, 255); */
+    background-color: rgb(236, 74, 106);
+    justify-content: space-between;
+    display: flex;
+
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
+header .menu img {
+    width: 2em;
+    height: auto;
+    filter: invert();
+    transition: 0.4s;
+   
+
+}
+
+header .menu img:hover {
+    transform: scale(1.1);
+}
+
+
+
+header .logo {
+    color: white;
+    font-size: 2em;
+
+}
+
+header .search-country input {
+    border: none;
+    width: 20em;
+    height: 2.5em;
+    border-radius: 15px;
+    outline: none;
+ 
+
+}
+
+header .search-country {
+    position: relative;
+    left: -600px;
+    align-items: center;
+    
+}
+
+.start {
+    width: 20em;
+    height: 5em;
+    background-color: rgb(230, 55, 90);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 400px;
+    border-radius: 20px;
+    transition: 0.4s;
+    
+}
+
+.start.active {
+    visibility: hidden;
+}
+
+.start:hover {
+    transform: scale(1.1);
+    background-color: rgba(117, 255, 248, 0.973);;
+
+}
+
+.start p {
+    color: white;
+    font-size: 2.5em;
+    
+}
+.start p:hover {
+   
+}
+
+.question-container {
+    width: 60em;
+    height: 35em;
+    /*background-color: rgba(255, 255, 255, 0.219); */
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    border-radius: 40px;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.question-container .answer-field {
+    width: 50em;
+    height: 20em;
+    background-color: none;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.question-container .answer-field button {
+    border: none;
+    background-color: rgb(253, 47, 88);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.4em;
+    transition: 0.5s;
+    
+}
+
+.question-container .answer-field button:hover {
+    background-color: rgba(117, 255, 248, 0.973);
+}
+
+.question-container .answer-field button.right {
+    background-color: rgb(97, 255, 97);
+}
+
+.question-container .answer-field button.wrong {
+    background-color: rgb(255, 97, 97);
+}
+
+.question-container .question-text {
+    background-color: rgba(117, 255, 248, 0.973);
+    width: 50em;
+    height: 10em;
+    position: absolute;
+    margin: auto;
+    border-radius: 40px;
+    left: 0;
+    right: 0;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    -webkit-box-shadow: 2px 5px 15px 5px #ffffff8a; 
+box-shadow: 2px 5px 15px 5px #ffffff3f;
+    
+}
+.question-container .question-text .text1 {
+    font-size: 2em;
+
+
+}
+
+.question-container .question-text p {
+    color: white;
+    position: relative;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+
+    
+}
+
+.countdown-container {
+    background-color: white;
+    width: 5em;
+    height: 2em;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    left: 900px;
+    right: 0;
+    top: 150px;
+    visibility: hidden;
+}
+
+body.right {
+    background-color: rgb(55, 255, 105);
+}
+
+body.wrong {
+    background-color: rgb(192, 35, 35);
+}
+
+.restart-game {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: rgba(117, 255, 248, 0.973);
+    
+    position: absolute;
+    margin: auto;
+    left: 450px;
+    right: 0;
+    top: 145px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    visibility: hidden;
+}
+.restart-game:hover {
+    background-color: rgba(253, 47, 88)
+}
+
+.restart-game img {
+    width: 1.4em;
+    height: auto;
+}
+
+.points {
+    background-color: rgb(255, 62, 101);
+    width: 6em;
+    height: 2em;
+    position: absolute;
+    margin: auto;
+    left: 650px;
+    right: 0;
+    top: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+    text-transform: uppercase;
+}
+.ending-screen {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 255, 255, 0.616); */
+    background-color:rgb(64, 255, 255); ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.ending-screen p {
+    color: white;
+    font-size: 2em;
+    background-color: rgb(243, 73, 107);
+    padding: 10px 20px;
+    border-radius: 15px;
+
+}
