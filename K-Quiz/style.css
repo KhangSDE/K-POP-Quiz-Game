@@ -111,7 +111,21 @@ header .search-country {
     visibility: hidden;
     transition: 0.4s;
 }
-
+@media (max-width: 1200px) {
+    .question-container   {
+        width: 45rem;
+    }
+}
+@media (max-width: 800px) {
+    .question-container   {
+        width: 30rem;
+    }
+}
+@media (max-width: 500px) {
+    .question-container   {
+        width: 20rem;
+    }
+}
 .question-container .answer-field {
     width: 50em;
     height: 20em;
@@ -137,6 +151,26 @@ header .search-country {
     transition: 0.5s;
     
 }
+@media (max-width: 1200px) {
+    .question-container .answer-field  {
+        width: 45rem;
+    }
+}
+@media (max-width: 1100px) {
+    .question-container .answer-field {
+        width: 40rem;
+    }
+}
+@media (max-width: 800px) {
+    .question-container .answer-field {
+        width: 30rem;
+    }
+}
+@media (max-width: 500px) {
+    .question-container .answer-field {
+        width: 20rem;
+    }
+}
 
 .question-container .answer-field button:hover {
     background-color: rgba(117, 255, 248, 0.973);
@@ -149,6 +183,7 @@ header .search-country {
 .question-container .answer-field button.wrong {
     background-color: rgb(255, 97, 97);
 }
+
 
 .question-container .question-text {
     background-color: rgba(117, 255, 248, 0.973);
@@ -167,6 +202,26 @@ header .search-country {
 box-shadow: 2px 5px 15px 5px #ffffff3f;
     
 }
+
+@media (max-width: 1200px) {
+    .question-container .question-text {
+        width: 45em;
+        
+    }
+}
+@media (max-width: 1100px) {
+    .question-container .question-text {
+        width: 40em;
+        
+    }
+}
+@media (max-width: 800px) {
+    .question-container .question-text {
+        width: 20em;
+        
+    }
+}
+
 .question-container .question-text .text1 {
     font-size: 2em;
 
@@ -196,6 +251,16 @@ box-shadow: 2px 5px 15px 5px #ffffff3f;
     right: 0;
     top: 150px;
     visibility: hidden;
+}
+@media (max-width: 1100px) {
+    .countdown-container {
+        left: 250px;
+    }
+}
+@media (max-width: 500px) {
+    .countdown-container {
+        left: 10px;
+    }
 }
 
 body.right {
@@ -248,6 +313,11 @@ body.wrong {
     color: white;
     visibility: hidden;
     text-transform: uppercase;
+}
+@media (max-width: 800px) {
+    .points {
+        left: 250px;
+    }
 }
 .ending-screen {
     position: fixed;
